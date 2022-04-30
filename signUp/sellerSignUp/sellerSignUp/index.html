@@ -14,7 +14,8 @@
 <body class="form-v10">
 	<div class="page-content">
 		<div class="form-v10-content">
-			<form class="form-detail" action="#" method="post" id="myform">
+			
+			<form class="form-detail" id="myform">
 				<div class="form-left">
 					<h2>General Infomation</h2>
 					<div class="form-row">
@@ -29,7 +30,7 @@
 					</div>
 					<div class="form-row">
 						<select name="position">
-						    <option value="position">Position</option>
+						    <option value="position">Worker</option>
 						    <option value="director">Director</option>
 						    <option value="manager">Manager</option>
 						</select>
@@ -40,9 +41,15 @@
 					<div class="form-row">
 						<input type="text" name="company" class="company" id="company" placeholder="Company" required>
 					</div>
+					<div class="form-row">
+						<input type="password" name="password" class="password" id="password" placeholder="Password" required>
+					</div>
+					<div class="form-row">
+						<input type="password" name="password1" class="password1" id="password1" placeholder="Confirm Password" required>
+					</div>
 					<div class="form-group">
 						<div class="form-row form-row-3">
-							<input type="text" name="business" class="business" id="business" placeholder="Business Arena" required>
+							<input type="text" name="business" class="business" id="business" placeholder="Business Arena">
 						</div>
 						<div class="form-row form-row-4">
 							<select name="employees">
@@ -63,7 +70,7 @@
 						<input type="text" name="street" class="street" id="street" placeholder="Company Address" required>
 					</div>
 					<div class="form-row">
-						<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" required>
+						<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information">
 					</div>
 					<div class="form-group">
 						<div class="form-row form-row-1">
@@ -72,10 +79,10 @@
 						<div class="form-row form-row-2">
 							<select name="state">
 								<option value="state">State</option>
-							    <option value="Chennai">Chennai</option>
+							    <option value="Chennai">Tamil Nadu</option>
 							    <option value="Kerala">Kerala</option>
 							    <option value="Andhra Pradesh">Andhra Pradesh</option>
-							    <option value="Bangalore">Bangalore</option>
+							    <option value="Bangalore">Karnataka</option>
 							</select>
 							<span class="select-btn">
 							  	<i class="zmdi zmdi-chevron-down"></i>
@@ -88,6 +95,7 @@
 						    <!-- <option value="Vietnam">Vietnam</option>
 						    <option value="Malaysia">Malaysia</option> -->
 						    <option value="India">India</option>
+						    <option value="India">USA</option>
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
@@ -95,7 +103,7 @@
 					</div>
 					<div class="form-group">
 						<div class="form-row form-row-1">
-							<input type="text" name="code" class="code" id="code" placeholder="Code +" required>
+							<input type="number" name="code" class="code" id="code" placeholder="Code +" required>
 						</div>
 						<div class="form-row form-row-2">
 							<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
@@ -105,17 +113,20 @@
 						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
 					</div>
 					<div class="form-checkbox">
-						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
+						<label class="container" required><p>I do accept the Terms and Conditions of your site.</p>
 						  	<input type="checkbox" name="checkbox">
 						  	<span class="checkmark"></span>
 						</label>
 					</div>
 					<div class="form-row-last">
-						<input type="submit" name="register" class="register" value="Sign Up">
+						 <button id="subber" style="height: 50px"  class="register">
+							<span style="color: blue;">Sign-Up</span>
+						</button>
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
+<script src="script.js"></script>
 </html>

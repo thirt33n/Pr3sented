@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Boutique | Ecommerce bootstrap template</title>
+    <title>PR3SENT | Gift ypur Joy</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -25,12 +25,12 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
-  <body>
+  <body style="background-color: #FFE6EE;">
     <div class="page-holder">
       <!-- navbar-->
       <header class="header bg-white">
         <div class="container px-lg-3">
-          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><a class="navbar-brand" href="index.html"><span class="fw-bold text-uppercase text-dark">Boutique</span></a>
+          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><a class="navbar-brand" href="index.html"><span class="fw-bold text-uppercase text-dark">PR3SENT</span></a>
             <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto">
@@ -40,17 +40,17 @@
                 <li class="nav-item">
                   <!-- Link--><a class="nav-link" href="shop.html">Shop</a>
                 </li>
-                <li class="nav-item">
-                  <!-- Link--><a class="nav-link" href="detail.html">Product detail</a>
-                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="detail.html">Product detail</a>
+                </li> -->
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                   <div class="dropdown-menu mt-3 shadow-sm" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="index.html">Homepage</a><a class="dropdown-item border-0 transition-link" href="shop.html">Category</a><a class="dropdown-item border-0 transition-link" href="detail.html">Product detail</a><a class="dropdown-item border-0 transition-link" href="cart.html">Shopping cart</a><a class="dropdown-item border-0 transition-link" href="checkout.html">Checkout</a></div>
                 </li>
               </ul>
               <ul class="navbar-nav ms-auto">               
-                <li class="nav-item"><a class="nav-link" href="cart.html"> <i class="fas fa-dolly-flatbed me-1 text-gray"></i>Cart<small class="text-gray fw-normal">(2)</small></a></li>
-                <li class="nav-item"><a class="nav-link" href="#!"> <i class="far fa-heart me-1"></i><small class="text-gray fw-normal"> (0)</small></a></li>
-                <li class="nav-item"><a class="nav-link" href="#!"> <i class="fas fa-user me-1 text-gray fw-normal"></i>Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html"> <i class="fas fa-dolly-flatbed me-1 text-gray"></i>Cart<small class="text-gray fw-normal"></small></a></li>
+                <li class="nav-item"><a class="nav-link" href="#!"> <i class="far fa-heart me-1"></i><small class="text-gray fw-normal"></small></a></li>
+                <li class="nav-item"><a class="nav-link" href="#!"> <i class="fas fa-user me-1 text-gray fw-normal"></i>Leela Karthikeyan</a></li>
               </ul>
             </div>
           </nav>
@@ -75,7 +75,7 @@
                     </ul>
                     <h2 class="h4">Red digital smartwatch</h2>
                     <p class="text-muted">$250</p>
-                    <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
+                    <p class="text-sm mb-4">.</p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
                         <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quantity</span>
@@ -131,7 +131,7 @@
                     </tr>
                   </thead>
                   <tbody class="border-0">
-                    <tr>
+                    <tr id="one">
                       <th class="ps-0 py-3 border-light" scope="row">
                         <div class="d-flex align-items-center"><a class="reset-anchor d-block animsition-link" href="detail.html"><img src="img/product-detail-3.jpg" alt="..." width="70"/></a>
                           <div class="ms-3"><strong class="h6"><a class="reset-anchor animsition-link" href="detail.html">Red digital smartwatch</a></strong></div>
@@ -154,7 +154,7 @@
                       </td>
                       <td class="p-3 align-middle border-light"><a class="reset-anchor" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a></td>
                     </tr>
-                    <tr>
+                    <tr id="one">
                       <th class="ps-0 py-3 border-0" scope="row">
                         <div class="d-flex align-items-center"><a class="reset-anchor d-block animsition-link" href="detail.html"><img src="img/product-detail-2.jpg" alt="..." width="70"/></a>
                           <div class="ms-3"><strong class="h6"><a class="reset-anchor animsition-link" href="detail.html">Apple watch</a></strong></div>
@@ -175,7 +175,7 @@
                       <td class="p-3 align-middle border-0">
                         <p class="mb-0 small">$250</p>
                       </td>
-                      <td class="p-3 align-middle border-0"><a class="reset-anchor" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a></td>
+                      <td class="p-3 align-middle border-0"><a class="reset-anchor" href="#!"><i  onclick="remover()" class="fas fa-trash-alt small text-muted"></i></a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -194,9 +194,9 @@
                 <div class="card-body">
                   <h5 class="text-uppercase mb-4">Cart total</h5>
                   <ul class="list-unstyled mb-0">
-                    <li class="d-flex align-items-center justify-content-between"><strong class="text-uppercase small font-weight-bold">Subtotal</strong><span class="text-muted small">$250</span></li>
+                    <li class="d-flex align-items-center justify-content-between"><strong  class="text-uppercase small font-weight-bold">Subtotal</strong><span id="subtotal" class="text-muted small">$500</span></li>
                     <li class="border-bottom my-2"></li>
-                    <li class="d-flex align-items-center justify-content-between mb-4"><strong class="text-uppercase small font-weight-bold">Total</strong><span>$250</span></li>
+                    <li class="d-flex align-items-center justify-content-between mb-4"><strong  class="text-uppercase small font-weight-bold">Total</strong><span id="total">$250</span></li>
                     <li>
                       <form action="#">
                         <div class="input-group mb-0">
@@ -264,11 +264,7 @@
       <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
       <script src="js/front.js"></script>
       <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite - 
-        //   see more here 
-        //   https://css-tricks.com/ajaxing-svg-sprite/
-        // ------------------------------------------------------ //
+      
         function injectSvgSprite(path) {
         
             var ajax = new XMLHttpRequest();
@@ -281,10 +277,16 @@
             document.body.insertBefore(div, document.body.childNodes[0]);
             }
         }
-        // this is set to BootstrapTemple website as you cannot 
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
+      
+          function remover()
+          {
+              const element = document.getElementById("one");
+              const total = document.getElementById("total");
+              const subtotal = document.getElementById("subtotal");
+              element.remove();
+              total.remove();
+              subtotal.remove();
+          }
         injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
         
       </script>
